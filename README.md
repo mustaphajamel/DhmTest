@@ -2,9 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## How to run it 
+Install docker .
+In the same level of the Dockerfile run `docker build . -t dhm-test` in order to build the image.<br>
+Run `docker run -p 8080:4200 dhm-test` in order to launch the application.<br>
+Navigate to `http://localhost:4200/`<br>
 
 ## Code scaffolding
 

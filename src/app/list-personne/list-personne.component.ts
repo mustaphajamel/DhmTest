@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Personne } from '../entities/personne';
+import { Personne } from '../entities/Personne';
 
 @Component({
   selector: 'app-list-personne',
@@ -20,7 +20,7 @@ export class ListPersonneComponent implements OnInit {
     nom: 'hamza'
   };
   listpersonne =[this.jamel,this.hamza,this.mustapha];
-  
+
 
 
 
