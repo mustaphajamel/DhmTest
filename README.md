@@ -2,12 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
 
-## How to run it 
-Install docker .
-In the same level of the Dockerfile run `docker build . -t dhm-test` in order to build the image.<br>
-Run `docker run -p 8080:4200 dhm-test` in order to launch the application.<br>
-Navigate to `http://localhost:4200/`<br>
-
+## How to Run It
+Copy `node_modules` to the project folder.<br>
+Install docker, In the same level of the Dockerfile run `docker build . -t dhm-test` in order to build the image.<br>
+Run `docker run -p 4200:4200 dhm-test`.<br>
+Navigate to `http://localhost:4200/`.
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.

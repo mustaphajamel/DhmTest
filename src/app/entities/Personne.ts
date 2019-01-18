@@ -1,4 +1,4 @@
-export class Personne {
-    id: number;
-    nom: string;
+export class Personne{
+    id:number
+    nom:string 
    }

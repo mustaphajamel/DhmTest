@@ -1,15 +1,9 @@
-<div border="1" align="center">
-    <table border="2">
-      <tr>
-        <th>id</th>
-        <th>nom</th>
-      </tr>
-      <div *ngFor="let personne of listpersonne">
-      <tr>
-        <td> {{personne.id}}</td>
-        <td> {{personne.nom}} </td>
-      </tr>
-      </div>
-    </table>
-
-</div>
+<h2>Liste des personnes</h2>
+<ul class="personnes">
+  <li *ngFor="let personne of listpersonne"
+  [class.selected]="personne === selectedPersonne"
+  (click)="onSelect(personne)">
+    <span class="badge">{{personne.id}}</span> {{personne.nom}}
+  </li>
+</ul>
+<app-personne [personne]="selectedPersonne"></app-personne>
