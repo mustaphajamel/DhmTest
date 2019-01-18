@@ -1,9 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { Personne } from '../entities/personne';
-import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
-import { Validators } from '@angular/forms';
-import { PersonneService } from '../service/personne.service';
-import { PersonneComponent } from '../personne/personne.component';
+import {Component, OnInit} from '@angular/core';
+import {Personne} from '../entities/Personne';
+import {PersonneService} from '../service/personne.service';
 
 @Component({
   selector: 'app-list-personne',

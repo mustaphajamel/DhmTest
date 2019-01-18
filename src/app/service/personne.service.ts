@@ -1,7 +1,6 @@
-import { Injectable } from '@angular/core';
-import { Personne } from '../entities/personne';
-import { FormGroup } from '@angular/forms';
-import { Observable, of } from 'rxjs';
+import {Injectable} from '@angular/core';
+import {Personne} from '../entities/Personne';
+import {Observable, of} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
