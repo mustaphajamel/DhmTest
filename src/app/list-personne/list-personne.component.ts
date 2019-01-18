@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Personne } from '../entities/personne';
-import { FormGroup, FormControl,FormBuilder } from '@angular/forms';
+import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
 import { Validators } from '@angular/forms';
 import { PersonneService } from '../service/personne.service';
 import { PersonneComponent } from '../personne/personne.component';
@@ -9,7 +9,7 @@ import { PersonneComponent } from '../personne/personne.component';
   selector: 'app-list-personne',
   templateUrl: './list-personne.component.html',
   styleUrls: ['./list-personne.component.css'],
-  providers:[PersonneService]
+  providers: [PersonneService]
 })
 export class ListPersonneComponent implements OnInit {
   listpersonne: Personne[];
@@ -17,11 +17,11 @@ export class ListPersonneComponent implements OnInit {
   constructor(private personneService: PersonneService) {
 
    }
-   
-   
+
+
   ngOnInit() {
     this.getPersonnes();
-   
+
   }
   onSelect(personne: Personne): void {
     this.selectedPersonne = personne;
@@ -32,4 +32,4 @@ export class ListPersonneComponent implements OnInit {
         .subscribe(personnes => this.listpersonne = personnes);
   }
 }
-    
+

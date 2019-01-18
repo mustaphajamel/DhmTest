@@ -10,8 +10,7 @@ import { PersonneComponent } from './personne/personne.component';
 
 const route: Routes =  [
   {path : '' , redirectTo: 'listticker' , pathMatch : 'full' },
-  {path : 'listpersonne', component: ListPersonneComponent },
-  ]
+  {path : 'listpersonne', component: ListPersonneComponent }, ];
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +26,7 @@ const route: Routes =  [
      ReactiveFormsModule,
     RouterModule.forRoot(
       route,
-      { enableTracing: false } 
+      { enableTracing: false }
     )
   ],
   providers: [],

@@ -7,6 +7,6 @@ import { Personne } from './entities/personne';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  
+
   title = 'DhmTest';
 }
